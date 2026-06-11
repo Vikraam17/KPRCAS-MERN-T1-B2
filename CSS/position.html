@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 200vh;
+        }
+        .navbar{
+            position: sticky;
+            top:0;
+        }
+        .ad{
+            position: fixed;
+            bottom: 0;
+            right:0;
+        }
+        .container{
+            border: 2px double blue;
+            position: relative;
+            margin-top: 50vh;
+            height: 80vh;
+        }
+        .child{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 80px;
+            border: 2px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">Navbar</div>
+    <div class="ad">Ad</div>
+    <div class="container">
+        <h1>Relative</h1>
+        <div class="child">
+            <h1>Absolute</h1>
+        </div>
+    </div>
+</body>
+</html>

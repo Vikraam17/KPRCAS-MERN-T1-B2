@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: block;
+            background-color: aqua;
+            width: 100px;
+        }
+        .inline{
+            display: inline;
+            background-color: blue;
+            width: 100px;
+        }
+        .inlineBlock{
+            display: inline-block;
+            background-color: red;
+            width: 100px;
+        }
+        .navbar{
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .list{
+            list-style: none;
+        }
+        .link{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color: brown;
+            border-radius: 10px;
+        }
+        .link:hover{
+            cursor:pointer;
+            background-color: crimson;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="list"><a href="" class="link">Home</a></li>
+            <li class="list"><a href="" class="link">About</a></li>
+            <li class="list"><a href="" class="link">Contact</a></li>
+            <li class="list"><a href="" class="link">Service</a></li>
+        </ul>
+    </nav>
+    <p class="container">Lorem ipsum dolor sit amet.</p>
+    <p class="inline">Lorem ipsum dolor sit amet.</p>
+    <p class="inlineBlock">Lorem ipsum dolor sit amet.</p>
+    <span>Lorem ipsum dolor sit amet.</span>
+</body>
+</html>
