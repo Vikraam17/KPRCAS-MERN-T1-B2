@@ -3,6 +3,7 @@ import Parent from './component/Parent'
 import State from './component/State'
 import Navbar from './component/Navbar'
 import {Routes,Route} from 'react-router-dom'
+import Effect from './component/Effect'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Parent/>}></Route>
         <Route path='/useState' element={<State/>}/>
+        <Route path='/useEffect' element={<Effect/>}/>
       </Routes>
     </>
   )
