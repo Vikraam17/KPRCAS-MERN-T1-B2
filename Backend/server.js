@@ -1,9 +1,9 @@
 const express = require("express")
 const connectDB = require("./config/db")
-const todo = require('./model/todo')
+const todo = require('./model/todo');
 const app = express();
 connectDB();
-
+app.use(express.json())
 
 app.get('/',async(req,res)=>{
     try{
@@ -14,10 +14,15 @@ app.get('/',async(req,res)=>{
     }
 })
 
-
-app.post('/',(req,res)=>{
-    res.send("Post Route is Working!!")
+app.post('/',async(req,res)=>{
+    try{
+        const task = await todo.create(req.body);
+        res.status(201).json(task)
+    }catch(err){
+        res.status(500).json(err);
+    }
 })
+
 app.put('/',(req,res)=>{
     res.send("Put Route is Working!!")
 })
