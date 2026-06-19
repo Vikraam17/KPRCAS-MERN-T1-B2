@@ -3,8 +3,8 @@ const connectDB = require("./config/db")
 const todo = require('./model/todo');
 const cors = require('cors')
 const app = express();
-connectDB();
 app.use(cors())
+connectDB();
 app.use(express.json())
 
 
